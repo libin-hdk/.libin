@@ -1,0 +1,1 @@
+/home/libin/go/misc/vim/autoload/go/complete.vim

@@ -1,0 +1,9 @@
+[user]
+	name = libin
+	email = libin_dba@xiaomi.com
+[diff]
+	tool = vimdiff
+[difftool]
+	prompt = No
+[core]
+	editor = vim
