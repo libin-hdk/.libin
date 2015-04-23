@@ -28,7 +28,7 @@ install_file .fonts
 install_file .gitignore
 install_file .gitconfig
 
-git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
+git clone BundleInstall  ~/.vim/bundle/vundle
 
 
 

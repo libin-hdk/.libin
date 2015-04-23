@@ -142,42 +142,60 @@ endif
 
 
 "vim 插件管理 
-"git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
-filetype off        " required!
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-"let Vundle manage Vundle
-"required!
-Bundle 'gmarik/vundle'
-"vim-scripts repos
-"Bundle 'vim-plugin-foo'
-"Bundle 'vim-plugin-bar'
-"Bundle 'ctrlp.vim'
-"Bundle 'AutoClose'
-Bundle 'ZenCoding.vim'
-Bundle 'matchit.zip'
-Bundle 'ShowTrailingWhitespace'
-Bundle '_jsbeautify'
-Bundle 'EasyMotion'
-Bundle 'FencView.vim'
-Bundle 'The-NERD-tree'
-Bundle 'The-NERD-Commenter'
-Bundle 'snipMate'
-Bundle 'bufexplorer.zip'
-Bundle 'taglist.vim'
-Bundle 'OmniCppComplete'
-Bundle 'https://github.com/Lokaltog/vim-powerline'
-Bundle 'https://github.com/Shougo/neocomplcache.git'
-Bundle 'https://github.com/majutsushi/tagbar.git'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'https://github.com/fatih/vim-go.git'
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+" alternatively, pass a path where Vundle should install plugins
+"call vundle#begin('~/some/path/here')
+
+" let Vundle manage Vundle, required
+Plugin 'gmarik/Vundle.vim'
+
+" The following are examples of different formats supported.
+" Keep Plugin commands between vundle#begin/end.
+" plugin on GitHub repo
+Plugin 'tpope/vim-fugitive'
+" plugin from http://vim-scripts.org/vim/scripts.html
+Plugin 'L9'
+" Git plugin not hosted on GitHub
+Plugin 'git://git.wincent.com/command-t.git'
+" git repos on your local machine (i.e. when working on your own plugin)
+Plugin 'file:///home/gmarik/path/to/plugin'
+" The sparkup vim script is in a subdirectory of this repo called vim.
+" Pass the path to set the runtimepath properly.
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+" Avoid a name conflict with L9
+Plugin 'user/L9', {'name': 'newL9'}
+Plugin 'https://github.com/nsf/gocode.git', {'rtp': 'vim/'}
+Plugin 'ZenCoding.vim'
+Plugin 'matchit.zip'
+Plugin 'ShowTrailingWhitespace'
+Plugin '_jsbeautify'
+Plugin 'EasyMotion'
+Plugin 'FencView.vim'
+Plugin 'The-NERD-tree'
+Plugin 'The-NERD-Commenter'
+Plugin 'snipMate'
+Plugin 'bufexplorer.zip'
+Plugin 'taglist.vim'
+Plugin 'OmniCppComplete'
+Plugin 'https://github.com/Lokaltog/vim-powerline'
+Plugin 'https://github.com/Shougo/neocomplcache.git'
+Plugin 'https://github.com/majutsushi/tagbar.git'
+Plugin 'https://github.com/fatih/vim-go.git'
+
+" All of your Plugins must be added before the following line
+call vundle#end()            " required
+filetype plugin indent on    " required
+"git clone http://github.com/gmarik/vundle.git ~/.vim/bundle/vundle
 "auto complete
 let g:neocomplcache_enable_at_startup=1
 
 "必须的设置：
 filetype on
-filetype plugin indent on
 
 " Golang
 filetype off
