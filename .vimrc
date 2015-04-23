@@ -168,7 +168,6 @@ Plugin 'file:///home/gmarik/path/to/plugin'
 " Pass the path to set the runtimepath properly.
 Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
 " Avoid a name conflict with L9
-Plugin 'user/L9', {'name': 'newL9'}
 Plugin 'https://github.com/nsf/gocode.git', {'rtp': 'vim/'}
 Plugin 'ZenCoding.vim'
 Plugin 'matchit.zip'

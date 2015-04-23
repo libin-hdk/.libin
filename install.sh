@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 #git clone git@github.com:laiwei/unix_home.git ~/.laiwei_unix_home
 
 
@@ -28,10 +28,5 @@ install_file .fonts
 install_file .gitignore
 install_file .gitconfig
 
-git clone BundleInstall  ~/.vim/bundle/vundle
-
-
-
-
-
+git clone https://github.com/gmarik/Vundle.vim.git  ~/.vim/bundle/Vundle.vim
 
